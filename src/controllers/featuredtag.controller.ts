@@ -26,7 +26,7 @@ export class FeaturedtagController {
     public featuredtagRepository : FeaturedtagRepository,
   ) {}
 
-  @post('/featuredtags', {
+  @post('/', {
     responses: {
       '200': {
         description: 'Featuredtag model instance',
@@ -47,7 +47,7 @@ export class FeaturedtagController {
     return this.featuredtagRepository.create(featuredtag);
   }
 
-  @get('/featuredtags/count', {
+  @get('//count', {
     responses: {
       '200': {
         description: 'Featuredtag model count',
@@ -61,7 +61,7 @@ export class FeaturedtagController {
     return this.featuredtagRepository.count(where);
   }
 
-  @get('/featuredtags', {
+  @get('/', {
     responses: {
       '200': {
         description: 'Array of Featuredtag model instances',
@@ -79,7 +79,7 @@ export class FeaturedtagController {
     return this.featuredtagRepository.find(filter);
   }
 
-  @patch('/featuredtags', {
+  @patch('/', {
     responses: {
       '200': {
         description: 'Featuredtag PATCH success count',
@@ -101,7 +101,7 @@ export class FeaturedtagController {
     return this.featuredtagRepository.updateAll(featuredtag, where);
   }
 
-  @get('/featuredtags/{id}', {
+  @get('//{id}', {
     responses: {
       '200': {
         description: 'Featuredtag model instance',
@@ -113,7 +113,7 @@ export class FeaturedtagController {
     return this.featuredtagRepository.findById(id);
   }
 
-  @patch('/featuredtags/{id}', {
+  @patch('//{id}', {
     responses: {
       '204': {
         description: 'Featuredtag PATCH success',
@@ -134,7 +134,7 @@ export class FeaturedtagController {
     await this.featuredtagRepository.updateById(id, featuredtag);
   }
 
-  @put('/featuredtags/{id}', {
+  @put('//{id}', {
     responses: {
       '204': {
         description: 'Featuredtag PUT success',
@@ -148,7 +148,7 @@ export class FeaturedtagController {
     await this.featuredtagRepository.replaceById(id, featuredtag);
   }
 
-  @del('/featuredtags/{id}', {
+  @del('//{id}', {
     responses: {
       '204': {
         description: 'Featuredtag DELETE success',

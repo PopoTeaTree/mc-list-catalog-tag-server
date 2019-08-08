@@ -1,2 +1,2 @@
-export * from './mysql.datasource';
+export * from './mysqlcatalog.datasource';
 export * from './mysqltag.datasource';

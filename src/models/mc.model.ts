@@ -21,20 +21,20 @@ export class Mc extends Entity {
 
   @property({
     type: String,
-    required: false,
+    required: true,
     length: 16777215,
-    mysql: {"columnName":"description","dataType":"mediumtext","dataLength":16777215,"dataPrecision":null,"dataScale":null,"nullable":"Y"},
+    mysql: {"columnName":"description","dataType":"mediumtext","dataLength":16777215,"dataPrecision":null,"dataScale":null,"nullable":"N"},
   })
-  description?: String;
+  description: String;
 
   @property({
     type: Number,
-    required: true,
+    required: false,
     precision: 65,
     scale: 30,
-    mysql: {"columnName":"price","dataType":"decimal","dataLength":null,"dataPrecision":65,"dataScale":30,"nullable":"N"},
+    mysql: {"columnName":"price","dataType":"decimal","dataLength":null,"dataPrecision":65,"dataScale":30,"nullable":"Y"},
   })
-  price: Number;
+  price?: Number;
 
   @property({
     type: Date,
@@ -49,6 +49,14 @@ export class Mc extends Entity {
     mysql: {"columnName":"createdAt","dataType":"datetime","dataLength":null,"dataPrecision":null,"dataScale":null,"nullable":"N"},
   })
   createdat: Date;
+
+  @property({
+    type: String,
+    required: true,
+    length: 30,
+    mysql: {"columnName":"status","dataType":"varchar","dataLength":30,"dataPrecision":null,"dataScale":null,"nullable":"N"},
+  })
+  status: String;
 
   // Define well-known properties here
 

@@ -1,10 +1,10 @@
-import {MccMclistServerApplication} from './application';
+import {MccMclistServer3Application} from './application';
 import {ApplicationConfig} from '@loopback/core';
 
-export {MccMclistServerApplication};
+export {MccMclistServer3Application};
 
 export async function main(options: ApplicationConfig = {}) {
-  const app = new MccMclistServerApplication(options);
+  const app = new MccMclistServer3Application(options);
   await app.boot();
   await app.start();
 

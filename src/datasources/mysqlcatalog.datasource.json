@@ -1,5 +1,5 @@
 {
-  "name": "mysql",
+  "name": "mysqlcatalog",
   "connector": "mysql",
   "url": "",
   "host": "127.0.0.1",

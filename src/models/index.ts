@@ -5,6 +5,6 @@ export * from './companytomc.model';
 export * from './relayid.model';
 export * from './featuredtag.model';
 export * from './featuredtag-mcids.model';
-export * from './featuredtagtotag.model';
 export * from './tag.model';
 export * from './tag-mcids.model';
+export * from './featuredtagtotag.model';

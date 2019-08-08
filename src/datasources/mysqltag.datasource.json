@@ -2,7 +2,7 @@
   "name": "mysqltag",
   "connector": "mysql",
   "url": "",
-  "host": "127.0.0.5",
+  "host": "127.0.0.43",
   "port": 30002,
   "user": "root",
   "password": "tag_pass",

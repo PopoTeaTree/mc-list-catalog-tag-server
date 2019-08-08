@@ -1,9 +1,9 @@
 import {Client} from '@loopback/testlab';
-import {MccMclistServerApplication} from '../..';
+import {MccMclistServer3Application} from '../..';
 import {setupApplication} from './test-helper';
 
 describe('HomePage', () => {
-  let app: MccMclistServerApplication;
+  let app: MccMclistServer3Application;
   let client: Client;
 
   before('setupApplication', async () => {

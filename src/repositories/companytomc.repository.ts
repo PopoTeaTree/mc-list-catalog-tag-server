@@ -1,6 +1,6 @@
 import {DefaultCrudRepository} from '@loopback/repository';
 import {Companytomc, CompanytomcRelations} from '../models';
-import {MysqlDataSource} from '../datasources';
+import {MysqlcatalogDataSource} from '../datasources';
 import {inject} from '@loopback/core';
 
 export class CompanytomcRepository extends DefaultCrudRepository<
@@ -9,7 +9,7 @@ export class CompanytomcRepository extends DefaultCrudRepository<
   CompanytomcRelations
 > {
   constructor(
-    @inject('datasources.mysql') dataSource: MysqlDataSource,
+    @inject('datasources.mysqlcatalog') dataSource: MysqlcatalogDataSource,
   ) {
     super(Companytomc, dataSource);
   }
